@@ -1,0 +1,57 @@
+/* Zera as margens padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuração do fundo do site (estilo tabuleiro escuro) */
+body {
+    background-color: #161512;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Centraliza tudo no meio da tela do PC ou Celular */
+}
+
+/* Caixinha que segura os elementos */
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 320px; /* Garante que os botões não fiquem gigantes */
+    padding: 20px;
+}
+
+/* Estilo do Título */
+h1 {
+    font-size: 26px;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #bababa;
+}
+
+/* Transforma os links em botões modernos de xadrez */
+a {
+    display: block;            /* Faz ocupar uma linha inteira própria */
+    background-color: #262421; /* Cor escura do botão */
+    color: #ffffff;
+    text-decoration: none;     /* Remove o sublinhado antigo */
+    padding: 16px;
+    margin-bottom: 15px;       /* Cria o espaço entre um botão e outro */
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 6px;        /* Bordas levemente arredondadas */
+    border: 1px solid #403e3b;
+    transition: all 0.2s ease; /* Efeito suave na troca de cor */
+}
+
+/* Efeito ao passar o mouse ou tocar no botão */
+a:hover {
+    background-color: #e1b244; /* Cor de ouro/madeira clara */
+    color: #000000;            /* Letras ficam pretas */
+    transform: translateY(-2px); /* Sobe de leve */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); /* Sombra charmosa */
+}
